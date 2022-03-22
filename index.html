@@ -1,46 +1,207 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
     <title>CV-MarieLeFloch</title>
-
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/bc0b65ddeb.js" crossorigin="anonymous"></script> <!-- ne marche pas comme ça on essaie en téléchargeant sur le local-->
+    <link href="fontawesome/css/all.css" rel="stylesheet"> <!-- ok avec ça!-->
 </head>
 
 <body>
+    <div class="wrapper">
 
-    <div id="container">
+      <header class="left">
+        <h1 class="left__title">Bienvenue !</h1>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">&#8962;</a></li>
-                    <li><a href="">Qui suis-je?</a></li>
-                    <li><a href="">Compétences</a></li>
-                    <li><a href="">Parcours</a></li>
-                    <li><a href="">Réalisations</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="left__card">
+          <img class ="photo-cv" src="photo-cv.jpeg" alt=""> <!-- MarieLeFloch.github.io/images/photo-cv.jpeg - changer le chemin une fois sur github -->
+          <div class ="left_card_text">
+            <h2 class="left__subtitle">
+                <strong class="left__subtitle-strong">Je suis Marie Le Floch </strong><br> Développeuse web et web mobile <br>(en formation) 
+                
+            </h2>
+            <h4 class="city"><i class="fa-solid fa-location-dot"></i> Rennes & alentours / Remote</h4>
+            <p class = "paraph-present">
+                Issue du domaine des études (socio-démographiques), je suis en reconversion professionnelle vers le développement web.<br>
+                Je souhaite réaliser un <strong class="txt-bold">stage de 2 à 6 mois</strong> à compter du mois de <strong class="txt-bold">septembre 2022</strong>.
+            </p>
+          </div>
+        </div>
 
-        <main>
-            <div class="carte-visite">
-                <!-- <img src="../MarieLeFloch.github.io/images/photo-cv.jpeg" alt="">-->
-                <div class="photo"></div>
-                <div class="infos">
-                    <h1>Développeuse web et web mobile</h1>
-                    <p>
-                        <br>Marie Le FLoch <br> <img src="https://img.icons8.com/ios-filled/50/000000/map-pin.png"/> Rennes (35)
-                    </p>
+        <nav>
+          <ul class="left__nav">
+            <li class="left__nav-item"><a href="https://www.linkedin.com/in/mlefloch/" class="left__nav-link"> <i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="left__nav-item"><a href="https://github.com/MarieLeFloch/MarieLeFloch" class="left__nav-link"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="right">
+
+        <div class="sections">
+
+          <article class="section">
+            <h3>Compétences techniques</h3>
+            <div class = "element">
+                <div class="infos_clefs technos">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-js"></i> 
+        
+                </div>
+                <p class = "technos"> HTML / CSS / PHP / JavaScript</p>
+            </div>
+          </article>
+
+          <article class="section">
+            <h3>Formation en développement web</h3>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>Fév - Août 2022 -</time>
+                    <strong class="titre_clef">Développeur/euse web et web mobile</strong>
+                    <strong class="etab_clef"><br>/ O'CLOCK <i class="fa-solid fa-location-dot"></i> Télépresentiel</strong>
+                </div>
+                <p>HTML / CSS / PHP / JavaScript</p>
+            </div>
+        
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>Nov 2021 - Fev 2022 -</time>
+                    <strong class="titre_clef">Initiation à HTML, CSS et JavaScript</strong>
+                    <strong class="etab_clef"><br>/ OpenClassroom & Codecademy <i class="fa-solid fa-location-dot"></i> À distance</strong>
+                </div>
+                <p></p>
+            </div>
+          </article>
+
+          <article class="section">
+
+                <h3>Expériences professionnelles</h3>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>Nov 2021 - Fev 2022 -</time>
+                    <strong class="titre_clef">Chargée d'études</strong>
+                    <strong class="etab_clef"><br>/ APRAS  <i class="fa-solid fa-location-dot"></i> Rennes</strong>
+                </div>
+                <p>Appui aux travaux de l'Observatoire des données sociales de Rennes Métropole 
+                    <br>| Finalisation de l'édition 2021 (synthèse multidimensionnelle)
+                    <br>| Réalisation d'une étude sur la petite enfance et les modes de garde à Rennes </p>
+            </div>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>Jul 2020 - Fev 2021 -</time>
+                    <strong class="titre_clef">Chargée d'études</strong>
+                    <strong class="etab_clef"><br>/ COMPAS <i class="fa-solid fa-location-dot"></i> Nantes</strong>
+                </div>
+                <p>Réalisation de diagnostics de territoires et analyses de besoins sociaux à destination de collectivités territoriales et acteurs des politiques sociales. </p>
+            </div>
+
+            
+        </article>
+
+          <article class="section">
+            <h3>Formations antérieures</h3>
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>2018 -2020 -</time>
+                    <strong class="titre_clef">Master de démographie</strong>
+                    <strong class="etab_clef"><br>/ Université de Strasbourg</strong>
+                </div>
+                <p> </p>
+            </div>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>2017 -2018 -</time>
+                    <strong class="titre_clef">Master genre, égalité et politiques sociales</strong>
+                    <strong class="etab_clef"><br>/ Université de Toulouse</strong>
+                </div>
+                <p> </p>
+            </div>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>2012 -2015 -</time>
+                    <strong class="titre_clef">Licence de sociologie</strong>
+                    <strong class="etab_clef"><br>/ Université de Nantes</strong>
+                </div>
+                <p> </p>
+            </div>
+
+            <div class = "element">
+                <div class="infos_clefs">
+                    <time>2012 -</time>
+                    <strong class="titre_clef">Bac Economique et Social</strong>
+                    <strong class="etab_clef"><br>/ Lycée Gaspard-Monge <i class="fa-solid fa-location-dot"></i> Nantes</strong>
+                </div>
+                <p> </p>
+            </div>
+
+          </article>
+
+          <article class="section">
+            <h3>Compétences transversales</h3>
+            <div class="comp-trans">
+                <div class = "element comp-trans-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">Anglais</strong>
+                        <strong class="etab_clef"><br>Niveau B2</strong>
+                    </div>
+                    <p> TOEIC score : 820 (2021).</p>
+                </div>
+                <div class = "element comp-trans-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">Espagnol</strong>
+                        <strong class="etab_clef"><br>Niveau B2</strong>
+                    </div>
+                    <p> </p>
+                </div>
+                <div class = "element comp-trans-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">SOFT SKILLS</strong>
+                        <strong class="etab_clef"><br>Capacités d'adaptation...</strong>
+                    </div>
+                    <p> </p>
                 </div>
             </div>
-        </main>
+          </article>
+
+         <!--<article class="section">
+            <h3>Centres d'intérêt</h3>
+            <div class="loisirs">
+                <div class = "element loisirs-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">Anglais</strong>
+                        <strong class="etab_clef"><br>Niveau B2</strong>
+                    </div>
+                    <p> TOEIC score : 820 (2021).</p>
+                </div>
+                <div class = "element loisirs-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">Espagnol</strong>
+                        <strong class="etab_clef"><br>Niveau B2</strong>
+                    </div>
+                    <p> </p>
+                </div>
+                <div class = "element loisirs-elem">
+                    <div class="infos_clefs">
+                        <strong class="titre_clef">SOFT SKILLS</strong>
+                        <strong class="etab_clef"><br>Capacités d'adaptation...</strong>
+                    </div>
+                    <p> </p>
+                </div>
+            </div>
+          </article>
+          --> 
+        </div>
+      </main>
 
     </div>
-
 </body>
 </html>
