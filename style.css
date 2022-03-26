@@ -2,22 +2,50 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* PARTIE GAUCHE */
+/*** PARTIE GAUCHE ***/
 
 .left {
-    position: fixed;
-    width: 45%;
-    height: 100%;/* ou 100vh */
-    padding: 3em 2em 1em;
-    background-image: url(computer-fond-flou.png);
-    background-size: cover;
-    background-position: center;
-    color: rgb(66, 66, 66);
+  /*position: fixed;
+  width: 45%;*/
+  height: 100%;/* ou 100vh */
+  padding: 3em 2em 1em;
+  background-image: url(computer-fond-flou.png);
+  background-size: cover;
+  background-position: center;
+  color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* AFFICHAGE MOBILE */
+
+@media screen and (max-width : 767px){
+  .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
   }
+
+  .left{
+    width: 100%;
+    height : 100%;
+  /*padding :0; pb affichage largeur wrapper et right*/
+    padding: 1em;
+  }
+
+}
+/* AFFICHAGE Tablettes PC */
+
+
+@media screen and (min-width : 768px){
+
+  .left {
+    position: fixed;
+    width: 45%;
+  }
+  
+}
 
   /*Titre */
 
@@ -39,15 +67,24 @@ body{
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
+    height: 50%;
+    width: 90%;
   }
 
 .photo-cv{
-      width:40%;
-      /*background-image: url(computer-fond-flou.png);
-      background-size: cover;
-      background-position: center;*/
-     
+      /* photo 640 * 600*/
+      height:160px;
+      width: 150px;
+      display: block;
+      margin:auto;
+      /*float: left;*/
   }
+
+@media screen and (max-width : 767px){
+    img.photo-cv{
+      display: none;
+    }
+}
 
   .left_card_text{
       padding: 2em;
@@ -95,12 +132,8 @@ body{
     font-weight: 700;
   }
   
-  /* PARTIE DROITE */
-  .right {
-    width: 55%;
-    margin-left: 45%;
-  }
-  
+  /**** PARTIE DROITE *****/
+
   .sections {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +147,32 @@ body{
     border-top: 1.5px solid #eaeaea;
     font-size: 0.9em;
   }
+
+
+/* AFFICHAGE Tablettes PC */
+
+@media screen and (min-width : 768px){
+
+  .right {
+    width: 55%;
+    margin-left: 45%;
+  }
+
+}
+
+/* AFFICHAGE MOBILE */
+
+@media screen and (max-width : 767px){
+
+  main.right{
+    width: 100%;
+  }
+
+  .section {
+    width: 90%;
+    margin-left: 2em;
+  }
+}
 
   h3 {
       font-weight: bold;
@@ -174,3 +233,6 @@ body{
   .comp-trans-elem{
       width: 20%;
   }
+
+
+
