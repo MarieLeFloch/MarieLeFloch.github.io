@@ -58,7 +58,7 @@ p {
   .left__title {
     /*text-transform: uppercase;*/
     font-size: 1.6em;
-    max-width: 150px;
+    max-width: 200px;
     line-height: 0.9;
     align-self: center;
     font-weight: bold;
@@ -328,7 +328,7 @@ p {
   }
 
   .comp-trans-elem{
-      width: 20%;
+      width: 30%;
   }
 
 
