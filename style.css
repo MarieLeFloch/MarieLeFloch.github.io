@@ -25,7 +25,7 @@ p {
   align-items: center;
 }
 
-/* AFFICHAGE MOBILE */
+/* AFFICHAGE TABLETTES MOBILE  */
 
 @media screen and (max-width : 1023px){
   .wrapper{
@@ -41,7 +41,7 @@ p {
   }
 
 }
-/* AFFICHAGE Tablettes PC */
+/* AFFICHAGE PC */
 
 
 @media screen and (min-width : 1024px){
@@ -63,8 +63,10 @@ p {
     align-self: center;
     font-weight: bold;
     color: white;
+
     
   }
+
   
   /*Carte de visite */
   .left__card {
@@ -73,7 +75,7 @@ p {
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
-    height: 50%;
+    height: 38%;
     width: 90%;
   }
 
@@ -133,11 +135,11 @@ p {
   nav{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20%;
   }
 
   .left__nav {
     list-style-type: none;
-    padding-bottom: 25%;
     display: flex;
     justify-content: space-around;
   }
@@ -158,15 +160,13 @@ p {
     color:#333;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9;
+    font-size: 0.75;
     padding-bottom: 0.2em;
-    float: left;
-  }
+    /*padding-left: 1.8em;*/
+    width: 25%;
+    text-align: center;
 
- /* .numero{
-    float: left;
-  }*/
-  /* trouver un moyen de ne pas bouger les autres éléments quand le numéro apparait */
+  }
 
   /**** PARTIE DROITE *****/
 
@@ -265,7 +265,22 @@ p {
     color:#333;
     font-weight: 520;
   }
+
+  .etab_clef > a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+  }
   
+
+  .etab_clef > a:hover{
+    font-size: 1.1em;
+    color:rgb(66, 117, 172);
+    font-weight:bold;
+  }
+
+  
+
 /* élément spécifiques */
 
   .fa-brands, .fa-square-phone, .fa-envelope{
@@ -286,6 +301,26 @@ p {
   .fa-location-dot{
       text-transform: lowercase !important;
   }
+
+  #break > span{
+    font-size: 0.85em;
+  }
+
+  #break_button{
+    text-decoration: none;
+    color:#333;
+  }
+
+  #break{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  #break_button:hover{
+    font-weight: bold;
+  }
+
 
   /* comp transversale */
   .comp-trans{
