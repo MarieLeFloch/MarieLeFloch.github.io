@@ -15,7 +15,7 @@ p {
   width: 45%;*/
   height: 100%;/* ou 100vh */
   padding: 3em 2em 1em;
-  background-image: url(computer-fond-flou.png);
+  background-image: url(../images/computer.png);
   background-size: cover;
   background-position: center;
   color: rgb(66, 66, 66);
@@ -275,7 +275,6 @@ p {
 
   .etab_clef > a:hover{
     font-size: 1.1em;
-    color:rgb(66, 117, 172);
     font-weight:bold;
   }
 
